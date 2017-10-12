@@ -1,0 +1,183 @@
+[
+{
+	"event":{
+		"location":"Ankara, Turkey",
+		"coordinates":[
+			39.9334,
+			32.8597
+		],
+		"code":"0214",
+		"source":"Turkey",
+		"target":"Tehran, Damascus",
+		"date":"Tuesday, Mar 11, 2011 7:03:47 AM PDT",
+		"headline":"Turkey to UN: We Seized Illegal Iran Arms Shipment en Route to Syria",
+		"content":"Turkey said Monday it had asked Tehran and Damascus to provide urgent information about arms and ammunition seized last week in southeastern Turkey aboard six trucks travelling from Iran to Syria",
+		"link":"http://www.haaretz.com/israel-news/turkey-to-un-we-seized-illegal-iran-arms-shipment-en-route-to-syria-1.353371"
+	},
+	"coordinates":{
+		"latitude":39.9334,
+		"longitude":32.8597
+	}
+},
+{
+	"event":{
+		"location":"Pyongyang, North Korea",
+		"coordinates":[
+			39.0392,
+			125.7625
+		],
+		"code":"022",
+		"source":"North Korean state media",
+		"target":"United States",
+		"date":"Tuesday, Jul 18, 2005 7:03:47 AM PDT",
+		"headline":"Pyongyang calls on Washington to improve 'ties of confidence",
+		"content":"North Korean state media have called on the United States to forge “ties ofconfidence” with Pyongyang ahead of six-party nuclear talks expected to be held in Beijing on July 26.",
+		"link":"http://www.cbc.ca/news/world/pyongyang-calls-on-washington-to-improve-ties-of-confidence-1.536733"
+	},
+	"coordinates":{
+		"latitude":39.0392,
+		"longitude":125.7625
+	}
+},
+{
+	"event":{
+		"location":"Pyongyang, North Korea",
+		"coordinates":[
+			1.2921,
+			36.8219
+		],
+		"code":"0241",
+		"source":"Kenya’s Liberal Democratic Party",
+		"target":"Energy Minister Kiraitu Murungi",
+		"date":"Thursday, Jan 22, 2009 7:03:47 AM PDT",
+		"headline":"Ruto and Kiraitu under fire over scandals",
+		"content":"Members of parliament from Kenya’s Liberal Democratic Party called on Energy Minister Kiraitu Murungi to resign in the wake of new evidence over the $7 billion scandals.",
+		"link":"http://www.nation.co.ke/news/-/1056/518438/-/50syt1z/-/index.html"
+	},
+	"coordinates":{
+		"latitude":1.2921,
+		"longitude":36.8219
+	}
+},
+{
+	"event":{
+		"location":"Baghdad, Iraq",
+		"coordinates":[
+			33.3128057,
+			44.3614875
+		],
+		"code":"0254",
+		"source":"Iraq",
+		"target":"U.N.",
+		"date":"Thursday, Jul 27, 2003 7:03:47 AM PDT",
+		"headline":"Were Sanctions Right?",
+		"content":"Iraq on Saturday appealed to the U.N. to bring an end to their trade embargo, which it said is causing huge shortages of medicine and food.",
+		"link":"http://www.nytimes.com/2003/07/27/magazine/were-sanctions-right.html?pagewanted=all"
+	},
+	"coordinates":{
+		"latitude":33.3128057,
+		"longitude":44.3614875
+	}
+},
+{
+	"event":{
+		"location":"Jakarta, Indoneshia",
+		"coordinates":[
+			-6.2087634,
+			106.8455990
+		],
+		"code":"031",
+		"source":"Asia-Pacific Economic Cooperation ",
+		"target":"Tokyo",
+		"date":"Thursday, Jul 27, 2008 7:03:47 AM PDT",
+		"headline":"Energy Working Group",
+		"content":"The Asia-Pacific Economic Cooperation (APEC) forum has agreed to set up an energy research center in Tokyo to further develop its regional energy projections, officials said Thursday",
+		"link":"http://www.apec.org/Groups/SOM-Steering-Committee-on-Economic-and-Technical-Cooperation/Working-Groups/Energy.aspx"
+	},
+	"coordinates":{
+		"latitude":-6.2087634,
+		"longitude":106.8455990
+	}
+},
+{
+	"event":{
+		"location":"Beirut, Lebanon",
+		"coordinates":[
+			33.8937913,
+			35.5017767
+		],
+		"code":"0332",
+		"source":"Syria",
+		"target":"Lebanon’s new President Elias Hrawi",
+		"date":"Thursday, Feb 1, 1990 7:03:47 AM PDT",
+		"headline":"Fighting Rages Between Lebanese Christian Forces",
+		"content":"Syria has again offered its troops to Lebanon’s new President Elias Hrawi to help him oust General Michel Aoun from the Christian enclave Aoun controls",
+		"link":"http://www.nytimes.com/1990/02/01/world/fighting-rages-between-lebanese-christian-forces.html"
+	},
+	"coordinates":{
+		"latitude":33.8937913,
+		"longitude":35.5017767
+	}
+},
+{
+	"event":{
+		"location":"Beirut, Lebanon",
+		"coordinates":[
+			33.8937913,
+			35.5017767
+		],
+		"code":"0344",
+		"source":"Syria",
+		"target":"Lebanon’s new President Elias Hrawi",
+		"date":"Thursday, Feb 1, 1990 7:03:47 AM PDT",
+		"headline":"CPJ report highlights lack of progress in police investigations, ongoing threats against journalists",
+		"content":"Serbian President Vojislav Kostunica promised to democratize Serbia and establish the rule of law as he succeeded Milosevic",
+		"link":"https://www.ifex.org/serbia/2002/06/28/cpj_report_highlights_lack_of_progress/"
+	},
+	"coordinates":{
+		"latitude":33.8937913,
+		"longitude":35.5017767
+	}
+},
+{
+	"event":{
+		"location":"Suva, Fizi",
+		"coordinates":[
+			-18.1248086,
+			178.4500789
+		],
+		"code":"0353",
+		"source":"Fijian rebels",
+		"target":"Prime Minister Mahendra Chaudhry",
+		"date":"Thursday, Jun 1, 2000 7:03:47 AM PDT",
+		"headline":"Fiji coup 'breakthrough'",
+		"content":"The Fijian rebels said they will release Prime Minister Mahendra Chaudhry and more than 30 members of his government, whom they had taken hostage two weeks ago, on the weekend.",
+		"link":"http://news.bbc.co.uk/2/hi/asia-pacific/771093.stm"
+	},
+	"coordinates":{
+		"latitude":-18.1248086,
+		"longitude":178.4500789
+	}
+},
+
+{
+	"event":{
+		"location":"Moscow, Russia",
+		"coordinates":[
+			55.7558260,
+			37.6173000
+		],
+		"code":"036",
+		"source":"Putin",
+		"target":"Chechen President Aslan Maskhadov",
+		"date":"Thursday, Sep 30, 1999 7:03:47 AM PDT",
+		"headline":"Russian Prime Minister Refuses to Rule Out New Chechen War",
+		"content":"On September 29, Putin offered to negotiate with Chechen President Aslan Maskhadov following the invasions of Dagestan.",
+		"link":"http://www.nytimes.com/1999/09/30/world/russian-prime-minister-refuses-to-rule-out-new-chechen-war.html"
+	},
+	"coordinates":{
+		"latitude":55.7558260,
+		"longitude":37.6173000
+	}
+},
+]
