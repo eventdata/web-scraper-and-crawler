@@ -1,0 +1,8 @@
+[
+   {"domain": "idl-reporteros.pe", "start_url": "https://idl-reporteros.pe/" },
+   {"domain": "elsalvador.com", "start_url": "http://www.elsalvador.com/" },
+   {"domain": "laprensagrafica.com", "start_url": "http://www.laprensagrafica.com/"},
+   {"domain": "insightcrime.org", "start_url": "http://www.insightcrime.org/"},
+   {"domain": "elheraldo.hn/", "start_url": "http://www.elheraldo.hn/"},
+   {"domain": "tiempo.hn", "start_url": "http://www.tiempo.hn/"}
+]

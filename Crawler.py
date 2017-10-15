@@ -1,3 +1,4 @@
+import json
 import urllib
 
 import scrapy
@@ -26,12 +27,26 @@ class SpanishSpider(scrapy.Spider):
     MONGO_SERVER_IP = "172.29.100.8"
     MONGO_PORT = "3154"
 
-    MONGO_COLLECTION = "processed_stories"
+    MONGO_COLLECTION = "articles_es"
     password = urllib.quote_plus(MONGO_PSWD)
     mongo_client = MongoClient('mongodb://' + MONGO_USER + ':' + password + '@' + MONGO_SERVER_IP + ":" + MONGO_PORT)
     
     def __init__(self):
         self.db = self.mongo_client.event_scrape
+        self.__load_info()
+
+
+    def __load_info(self):
+        entries = json.load(open("crawl_list.json","r"))
+        self.allowed_domains = []
+        self.start_urls = []
+        for e in entries:
+            self.start_urls.append(e['start_url'])
+            self.allowed_domains.append(e['domain'])
+
+        print "Loading Complete. List of website to crawl"
+        print self.start_urls
+
         
     
     def parse(self, response):
