@@ -37,7 +37,7 @@ class SpanishSpider(scrapy.Spider):
 
 
     def __load_info(self):
-        entries = json.load(open("crawl_list.json","r"))
+        entries = json.load(open("crawl_list_2.json","r"))
         self.allowed_domains = []
         self.start_urls = []
         for e in entries:
