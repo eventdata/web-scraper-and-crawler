@@ -50,13 +50,13 @@ class SpanishSpider(scrapy.Spider):
         
     
     def parse(self, response):
-        article= self.articleProcessor.extractAll(response.body)
+        article= self.articleProcessor.extractAll(response.content)
         print article.title
         
         self.db.articles_es.insert(
                                 {
                                  "title": article.title, 
-                                 "pub_date:":article.publish_date, 
+                                 "pub_date:": article.publish_date,
                                  "url":response.url,
                                  "content": article.text
                                 })

@@ -4,9 +4,9 @@ from newspaper import Article
 
 class NewspaperTextExtractor:
     
-    article_lang = ""
+    article_lang = "en"
     
-    def __init__(self, language):
+    def __init__(self, language="en"):
         self.article_lang = language
     
     def extract(self, raw_html):

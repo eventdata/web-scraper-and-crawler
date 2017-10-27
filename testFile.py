@@ -1,7 +1,33 @@
-from datetime import datetime
-from time import strftime
+from newspaper import Article
+from pymongo import MongoClient
+import urllib
+from NewspaperTextExtractor import NewspaperTextExtractor
+import requests
 
-time_now = datetime.now()
-str = 'Time Now '+str(time_now)
 
-print str
+issue_count = 0
+article_count = 0
+
+extractor = NewspaperTextExtractor(language="es")
+
+
+response = requests.get("http://caracol.com.co/emisora/2017/10/27/bogota/1509106310_741399.html")
+
+print response.content
+
+article = extractor.extractAll(response.content)
+
+# article = Article("http://caracol.com.co/emisora/2017/10/27/bogota/1509106310_741399.html", language="es")
+#
+# article.download()
+#
+# article.parse()
+
+if article.publish_date is  None:
+    print "Date missing"
+else:
+    print article.publish_date
+
+
+
+print "Number of Issues", str(issue_count)
