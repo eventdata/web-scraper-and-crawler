@@ -4,5 +4,7 @@
    {"domain": "laprensagrafica.com", "start_url": "http://www.laprensagrafica.com/"},
    {"domain": "insightcrime.org", "start_url": "http://www.insightcrime.org/"},
    {"domain": "elheraldo.hn/", "start_url": "http://www.elheraldo.hn/"},
-   {"domain": "tiempo.hn", "start_url": "http://www.tiempo.hn/"}
+   {"domain": "tiempo.hn", "start_url": "http://www.tiempo.hn/"},
+   {"domain": "vanguardia.com", "start_url": "http://www.vanguardia.com/" },
+   {"domain": "caracol.com.co", "start_url": "'http://caracol.com.co'" }
 ]
