@@ -193,8 +193,8 @@ def parse_results(rss_results, website, lang, db_collection):
         print "ERROR: Extractor for", lang, "is not available";
     
     #producer = KafkaProducer(bootstrap_servers='dmlhdpc1')
-    #client = SimpleClient('172.29.100.6:9092')
-    #producer = SimpleProducer(client)
+    client = SimpleClient('172.29.100.6:9092')
+    producer = SimpleProducer(client)
        
     #print "Parsing Results"
     for result in rss_results:
@@ -247,7 +247,7 @@ def parse_results(rss_results, website, lang, db_collection):
 #             print "TAKEN"
 #             kafkaMessenger.send(doc.encode('utf-8'))
 #             kafkaPool.give_back(kafkaMessenger)
-            #producer.send_messages("test", str(entry_id)+"#"+doc.encode('utf-8'))
+            producer.send_messages("test", str(entry_id)+"#"+doc.encode('utf-8'))
             #print "Message Sent"
             #producer.send_messages('test', doc.encode("utf-8"))
 
@@ -264,7 +264,7 @@ def parse_results(rss_results, website, lang, db_collection):
                 except UnicodeDecodeError:
                     logger.info('Added entry from {}. Unicode error for id'.format(result.url))
 
-    #client.close()
+    client.close()
       
 def _check_mongo(url, db_collection):
     """
