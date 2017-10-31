@@ -22,7 +22,7 @@ from kafka.producer.kafka import KafkaProducer
 #from findertools import sleep
 from kafka.client import SimpleClient
 from kafka.producer.simple import SimpleProducer
-
+logging.basicConfig()
 reload(sys) 
 sys.setdefaultencoding('utf8')
 # Initialize Logger
