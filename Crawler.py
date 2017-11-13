@@ -51,7 +51,7 @@ class SpanishSpider(scrapy.Spider):
         
     
     def parse(self, response):
-        print type(response)
+        #print type(response)
 
         article = None
         try:
@@ -60,7 +60,7 @@ class SpanishSpider(scrapy.Spider):
             article = NewsPlease.from_html(response.body.decode('latin-1').encode("utf-8"))
             print "EXCEPTION OCCURED"
         print article.date_publish
-        print article.text
+        #print article.text
 
         print response.url
         self.db.articles_es.insert(
