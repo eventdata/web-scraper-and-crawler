@@ -10,6 +10,7 @@ from newspaper.article import Article
 
 from pymongo.mongo_client import MongoClient
 
+from newsplease import NewsPlease
 
 
 class SpanishSpider(scrapy.Spider):
@@ -24,7 +25,7 @@ class SpanishSpider(scrapy.Spider):
     MONGO_PORT = "3154"
     MONGO_USER = "event_reader"
     MONGO_PSWD = "dml2016"
-    MONGO_SERVER_IP = "172.29.100.8"
+    MONGO_SERVER_IP = "172.29.100.14"
     MONGO_PORT = "3154"
 
     MONGO_COLLECTION = "articles_es"
@@ -50,16 +51,26 @@ class SpanishSpider(scrapy.Spider):
         
     
     def parse(self, response):
-        article= self.articleProcessor.extractAll(response.content)
-        print article.title
-        
+        print type(response)
+
+        article = None
+        try:
+            article = NewsPlease.from_html(response.body.encode("utf-8"))
+        except:
+            article = NewsPlease.from_html(response.body.decode('latin-1').encode("utf-8"))
+            print "EXCEPTION OCCURED"
+        print article.date_publish
+        print article.text
+
+        print response.url
         self.db.articles_es.insert(
-                                {
-                                 "title": article.title, 
-                                 "pub_date:": article.publish_date,
-                                 "url":response.url,
-                                 "content": article.text
-                                })
+            {
+                "title": article.title,
+                "pub_date:": article.date_publish,
+                "url": response.url,
+                "content": article.text,
+                "raw_html": response.body
+            })
         
         links = self.linkExtractor.extract_links(response)
         for link in links:

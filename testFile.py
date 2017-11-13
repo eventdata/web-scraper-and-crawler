@@ -6,6 +6,8 @@ import requests
 import scrapy
 from time import sleep
 
+from newsplease import NewsArticle
+
 
 url = "http://caracol.com.co/radio/2017/05/22/nacional/1495474619_093166.html"
 
@@ -32,12 +34,14 @@ response = requests.get("http://caracol.com.co/radio/2017/05/22/nacional/1495474
 
 article = extractor.extractAll(response.content)
 
-article = Article("http://caracol.com.co/radio/2017/05/22/nacional/1495474619_093166.html", language="es")
+article = Article("http://caracol.com.co/emisora/2017/11/10/valledupar/1510323625_125021.html", language="es")
 
+article.download()
 
 article.set_html(response.content)
 
 article.parse()
+article.download()
 print type(response)
 
 if article.publish_date is None:
@@ -47,6 +51,8 @@ else:
 
 sleep(5)
 
-
+from newsplease import NewsPlease
+article = NewsPlease.from_url('http://caracol.com.co/emisora/2017/11/10/valledupar/1510323625_125021.html')
+print(article.title)
 
 print "Number of Issues", str(issue_count)
