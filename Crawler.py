@@ -62,7 +62,7 @@ class SpanishSpider(scrapy.Spider):
 
         print article.date_publish
         #print article.text
-        article2 = Article(url="")
+        article2 = Article(url="", language="es")
         article2.set_html(response.body)
         article2.parse()
 
