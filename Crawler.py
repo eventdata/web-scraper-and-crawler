@@ -70,7 +70,7 @@ class SpanishSpider(scrapy.Spider):
         self.db.articles_es.insert(
             {
                 "title": article.title,
-                "pub_date:": article.date_publish,
+                "pub_date": article.date_publish,
                 "url": response.url,
                 "content": article2.text,
                 "raw_html": response.body
